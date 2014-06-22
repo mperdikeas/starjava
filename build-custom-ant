@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+mkdir -p custom-ant && cd ant && ant -Dstar.dir=../custom-ant install && cd -

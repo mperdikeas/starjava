@@ -1,0 +1,21 @@
+To only build the taplint jar and dependencies, execute the following commands:
+
+./build-custom-ant
+. ./set-star-environment.sh
+ant build
+
+    ... when the above build ultimately fails with:
+
+        "/starjava/frog/src/main/uk/ac/starlink/frog/util/JPEGUtility.java:3: error: package com.sun.image.codec.jpeg does not exist"
+
+    ... then, do a final build of some targeted projects, which should succeed:
+
+./build-taplint-deps
+
+
+
+
+
+
+
+-- Menelaus 4.V.2014
